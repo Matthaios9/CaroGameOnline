@@ -1,0 +1,59 @@
+
+#board-area {
+	max-width: 1000px;
+}
+#info-board {
+	padding: 5px;
+	text-align: center;
+}
+
+#board {
+	overflow: auto;
+}
+#board-table{
+	width: 100%;
+	border: 1px solid #7F6346;
+	min-width: 500px;
+	table-layout:fixed;
+	border-collapse: collapse;
+}
+.square {
+	width: 6.25%;
+	padding: 2px;
+	border: 1px solid #7F6346;
+	cursor: pointer;
+	overflow:hidden;
+}
+.square:before {
+    content:'';
+    float: left;
+	padding-top:100%;
+}
+.square img {
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#board-cpanel {
+	margin-top: 10px;
+	padding: 10px;
+	z-index: 100;
+	background-color: white;
+	border-radius: 5px;
+}
+
+@media all and (min-width: 900px){
+	#board-area {
+		width: 60%;
+		clear: none;
+	}
+	#container{
+		width: 80%;
+		max-width: 1500px;
+	}
+	.content-area{
+		margin: 10px;
+	}
+}
